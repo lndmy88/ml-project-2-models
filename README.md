@@ -5,8 +5,8 @@ This is to demo a ML project where there are 2 different models sharing the same
 
 A telecom company wants to:
 
-Predict which customers are likely to churn (classification problem).
+- Predict which customers are likely to churn (classification problem).
 
-Estimate each customer’s future lifetime value (LTV) (regression problem).
+- Estimate each customer’s future lifetime value (LTV) (regression problem).
 
 Both models use the same customer dataset, but train on different target variables.
