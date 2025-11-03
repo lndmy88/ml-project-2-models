@@ -1,0 +1,6 @@
+{
+  "model_type": "GradientBoostingRegressor",
+  "params": {
+    "random_state": 42
+  }
+}

@@ -1,0 +1,24 @@
+data:
+  raw_path: data/dwh_src_tables
+  raw_file_name: customer_data
+  processed_path: data/processed
+  churn_target_column: &churn_target churn_target
+  ltv_target_column: &ltv_target ltv_target
+  not_feature_columns: [*churn_target, *ltv_target]
+  segments: ["0-5", "6-10", "11-15", "16-20", "21-30"]
+  train_file_name: train
+  test_file_name: test
+
+
+artifacts:
+  churn:
+    model_name: churn_model
+    model_dir: s3_artifacts/churn
+  ltv:
+    model_name: ltv_model
+    model_dir: s3_artifacts/ltv
+
+mlflow:
+  tracking_uri: http://localhost:5000
+  experiment_name: ml_project_churn_n_ltv      
+

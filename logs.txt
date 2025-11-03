@@ -1,0 +1,98 @@
+(ml_venv) linhnguyen@Linhs-MacBook-Pro ml-project-2-models % python app.py
+🚀 Starting training pipeline for segments: ['0-5', '6-10', '11-15', '16-20', '21-30']
+🔍 Loading selected segment: 0-5
+🧹 Cleaned data. Nulls remaining: 0
+✅ Processed data shape: (7043, 47)
+💾 Saved train set to data/processed/train_day_0-5.parquet ((5634, 47))
+💾 Saved test set to data/processed/test_day_0-5.parquet ((1409, 47))
+🔍 Loading selected segment: 6-10
+🧹 Cleaned data. Nulls remaining: 0
+✅ Processed data shape: (7043, 47)
+💾 Saved train set to data/processed/train_day_6-10.parquet ((5634, 47))
+💾 Saved test set to data/processed/test_day_6-10.parquet ((1409, 47))
+🔍 Loading selected segment: 11-15
+🧹 Cleaned data. Nulls remaining: 0
+✅ Processed data shape: (7043, 47)
+💾 Saved train set to data/processed/train_day_11-15.parquet ((5634, 47))
+💾 Saved test set to data/processed/test_day_11-15.parquet ((1409, 47))
+🔍 Loading selected segment: 16-20
+🧹 Cleaned data. Nulls remaining: 0
+✅ Processed data shape: (7043, 47)
+💾 Saved train set to data/processed/train_day_16-20.parquet ((5634, 47))
+💾 Saved test set to data/processed/test_day_16-20.parquet ((1409, 47))
+🔍 Loading selected segment: 21-30
+🧹 Cleaned data. Nulls remaining: 0
+✅ Processed data shape: (7043, 47)
+💾 Saved train set to data/processed/train_day_21-30.parquet ((5634, 47))
+💾 Saved test set to data/processed/test_day_21-30.parquet ((1409, 47))
+2025/11/04 00:27:20 INFO mlflow.tracking.fluent: Experiment with name 'ml_project_churn_n_ltv' does not exist. Creating a new experiment.
+✅ Churn model training complete for day 0-5. Ready for evaluation.
+Successfully registered model 'churn_model_day_0-5'.
+2025/11/04 00:27:23 WARNING mlflow.tracking._model_registry.fluent: Run with id c3a86c75032242faa9bbfdb68660e8e6 has no artifacts at artifact path 'churn_model_day_0-5', registering model based on models:/m-692438104baa4120b3a84d661d351c6c instead
+Created version '1' of model 'churn_model_day_0-5'.
+Registered model: churn_model_day_0-5, version: 1
+✅ Churn model training complete for day 6-10. Ready for evaluation.
+Successfully registered model 'churn_model_day_6-10'.
+2025/11/04 00:27:25 WARNING mlflow.tracking._model_registry.fluent: Run with id d9ae15ea2b4a4d4c881b13060952eb56 has no artifacts at artifact path 'churn_model_day_6-10', registering model based on models:/m-2ac6315c3cb14171ad442890adb81b3b instead
+Created version '1' of model 'churn_model_day_6-10'.
+Registered model: churn_model_day_6-10, version: 1
+✅ Churn model training complete for day 11-15. Ready for evaluation.
+Successfully registered model 'churn_model_day_11-15'.
+2025/11/04 00:27:27 WARNING mlflow.tracking._model_registry.fluent: Run with id b16398675af24b95aca8922ce541edf5 has no artifacts at artifact path 'churn_model_day_11-15', registering model based on models:/m-1c96b7ac06384773a056d618aeab5a2a instead
+Created version '1' of model 'churn_model_day_11-15'.
+Registered model: churn_model_day_11-15, version: 1
+✅ Churn model training complete for day 16-20. Ready for evaluation.
+Successfully registered model 'churn_model_day_16-20'.
+2025/11/04 00:27:29 WARNING mlflow.tracking._model_registry.fluent: Run with id ea367915ef4a4da7adfd82bc3232fa59 has no artifacts at artifact path 'churn_model_day_16-20', registering model based on models:/m-9ecc2c7fa42e409faefa97abd357fad5 instead
+Created version '1' of model 'churn_model_day_16-20'.
+Registered model: churn_model_day_16-20, version: 1
+✅ Churn model training complete for day 21-30. Ready for evaluation.
+Successfully registered model 'churn_model_day_21-30'.
+2025/11/04 00:27:31 WARNING mlflow.tracking._model_registry.fluent: Run with id 34a607105250494b83c6b624a1362a6d has no artifacts at artifact path 'churn_model_day_21-30', registering model based on models:/m-103579998c254ab5bb42e3f94a0abf95 instead
+Created version '1' of model 'churn_model_day_21-30'.
+Registered model: churn_model_day_21-30, version: 1
+📦 Model package exported to: s3_artifacts/churn
+✅ Churn evaluation done for day 0-5. Accuracy=0.779, AUC=0.682
+📦 Model package exported to: s3_artifacts/churn
+✅ Churn evaluation done for day 6-10. Accuracy=0.779, AUC=0.682
+📦 Model package exported to: s3_artifacts/churn
+✅ Churn evaluation done for day 11-15. Accuracy=0.779, AUC=0.682
+📦 Model package exported to: s3_artifacts/churn
+✅ Churn evaluation done for day 16-20. Accuracy=0.779, AUC=0.682
+📦 Model package exported to: s3_artifacts/churn
+✅ Churn evaluation done for day 21-30. Accuracy=0.779, AUC=0.682
+✅ LTV model training complete for day 0-5. Ready for evaluation.
+Successfully registered model 'ltv_model_day_0-5'.
+2025/11/04 00:27:33 WARNING mlflow.tracking._model_registry.fluent: Run with id 18e9139eaab5433a8fa37535b0fb662c has no artifacts at artifact path 'ltv_model_day_0-5', registering model based on models:/m-e0b531e723564beb80f63df06a23a66b instead
+Created version '1' of model 'ltv_model_day_0-5'.
+Registered model: ltv_model_day_0-5, version: 1
+✅ LTV model training complete for day 6-10. Ready for evaluation.
+Successfully registered model 'ltv_model_day_6-10'.
+2025/11/04 00:27:36 WARNING mlflow.tracking._model_registry.fluent: Run with id f8a7aceda25842c6bd8cbc19008977df has no artifacts at artifact path 'ltv_model_day_6-10', registering model based on models:/m-b2f245c755764b428d8f9d592db79e76 instead
+Created version '1' of model 'ltv_model_day_6-10'.
+Registered model: ltv_model_day_6-10, version: 1
+✅ LTV model training complete for day 11-15. Ready for evaluation.
+Successfully registered model 'ltv_model_day_11-15'.
+2025/11/04 00:27:38 WARNING mlflow.tracking._model_registry.fluent: Run with id 2278c931590a4efbbeb28f050e7b89cd has no artifacts at artifact path 'ltv_model_day_11-15', registering model based on models:/m-eefc692566614fddbff47b7a9be62a9e instead
+Created version '1' of model 'ltv_model_day_11-15'.
+Registered model: ltv_model_day_11-15, version: 1
+✅ LTV model training complete for day 16-20. Ready for evaluation.
+Successfully registered model 'ltv_model_day_16-20'.
+2025/11/04 00:27:40 WARNING mlflow.tracking._model_registry.fluent: Run with id 69259d24ff0b46e88c05a526de9756de has no artifacts at artifact path 'ltv_model_day_16-20', registering model based on models:/m-da5a083dd78d47b89d6a5a9c6a8a6373 instead
+Created version '1' of model 'ltv_model_day_16-20'.
+Registered model: ltv_model_day_16-20, version: 1
+✅ LTV model training complete for day 21-30. Ready for evaluation.
+Successfully registered model 'ltv_model_day_21-30'.
+2025/11/04 00:27:42 WARNING mlflow.tracking._model_registry.fluent: Run with id 92b3a78e45b4401d9c61830f397b3f4c has no artifacts at artifact path 'ltv_model_day_21-30', registering model based on models:/m-a3c50ff558574bd089e6531fa80df66c instead
+Created version '1' of model 'ltv_model_day_21-30'.
+Registered model: ltv_model_day_21-30, version: 1
+📦 Model package exported to: s3_artifacts/ltv
+✅ LTV evaluation done for day 0-5. RMSE=66.364, R²=0.999
+📦 Model package exported to: s3_artifacts/ltv
+✅ LTV evaluation done for day 6-10. RMSE=66.364, R²=0.999
+📦 Model package exported to: s3_artifacts/ltv
+✅ LTV evaluation done for day 11-15. RMSE=66.364, R²=0.999
+📦 Model package exported to: s3_artifacts/ltv
+✅ LTV evaluation done for day 16-20. RMSE=66.364, R²=0.999
+📦 Model package exported to: s3_artifacts/ltv
+✅ LTV evaluation done for day 21-30. RMSE=66.364, R²=0.999
